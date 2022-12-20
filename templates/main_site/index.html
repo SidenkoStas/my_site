@@ -1,0 +1,341 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ block.super }} | Главная
+{% endblock title %}
+
+{% block content %}
+    <!--====== Start Hero Section ======-->
+    <section class="hero-area">
+        <div class="hero-wrapper-five">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="hero-content">
+                            <h1>Backend разработка</h1>
+                            <ul class="list-style-one list-circle-blue-light">
+                                <li>Креативные сотрудники </li>
+                                <li>Профессиональный сервис</li>
+                                <li>Ответственный подход </li>
+                                <li>Качественное исполнение</li>
+                            </ul>
+                            <ul class="button">
+                                <li><a href="index.html" class="main-btn btn-orange-dark">Связаться</a></li>
+                                <li><a href="about.html" class="main-btn btn-blue-light">Примеры работ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="hero-img">
+                            <img src="{% static "/images/hero/hero-5_img-1.png" %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End Hero Section ======-->
+    <br>
+    <!--====== Start About Section ======-->
+    <section class="fancy-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="{% static "/images/about/about-8.png" %}" alt="About Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-wrapper">
+                        <div class="section-title mb-30">
+                            <span class="sub-title blue-light" id="О компании">О компании</span>
+                            <h2>Компания создающая Backend разработки</h2>
+                        </div>
+                        <blockquote class="quote-content quote-blue-light mb-50">
+                            Разрабатываем Backend для сайтов на основе Django.
+                            От сайтов визиток до интернет магазинов с привязкой к необхадимой базе данных.
+                        </blockquote>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="block-style-twentyThree d-flex mb-40">
+                                    <div class="icon">
+                                        <i class="far fa-layer-plus"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Миссия и видиние</h4>
+                                        <p>Видеть каждого клиента удовлетворённым проделанной работой.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="block-style-twentyThree d-flex mb-40">
+                                    <div class="icon">
+                                        <i class="far fa-medal"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Цели компании</h4>
+                                        <p>Создание качественных и продающих сайтов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End About Section ======-->
+    <!--====== Start Team Section ======-->
+    <section class="team-area team-style-three pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center mb-60">
+                        <span class="sub-title blue-light" id="Наша команда">Наша команда</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-item mb-40 text-center">
+                        <div class="team-img">
+                            <img src="{% static "/images/team/img_16.jpg" %}" alt="Image">
+                            <div class="team-hover">
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title"><a href="#">Сиденко Станислав Александрович</a></h3>
+                            <p class="position">Python Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End Team Section ======-->
+    <!--====== Start portfolio Section ======-->
+    <section class="portfolio-area pt-120 pb-130" id="masonry-project">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title mb-60">
+                        <span class="sub-title blue-light" id="Последние работы">Последние работы</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row masonry-row">
+                <div class="col-lg-6 portfolio-column">
+                    <div class="portfolio-block-four bg-one text-center">
+                        <div class="portfolio-img">
+                            <img src="{% static "/images/projects/project-13.jpg" %}" alt="portfolio image">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <a href="{% static "/images/projects/project-13.jpg" %}" class="img-popup"><i class="far fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="title"><a href="project-details.html">IT Company Web Template</a></h3>
+                            <span class="category">Template Design</span>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-lg-6 portfolio-column">
+                    <div class="portfolio-block-four bg-two text-center">
+                        <div class="portfolio-img">
+                            <img src="{% static "/images/projects/project-14.jpg" %}" alt="portfolio image">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <a href="{% static "/images/projects/project-13.jpg" %}" class="img-popup"><i class="far fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="title"><a href="project-details.html">Software Company Template</a></h3>
+                            <span class="category">Template Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 portfolio-column">
+                    <div class="portfolio-block-four bg-three text-center">
+                        <div class="portfolio-img">
+                            <img src="{% static "/images/projects/project-15.jpg" %}" alt="portfolio image">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <a href="{% static "/images/projects/project-13.jpg" %}" class="img-popup"><i class="far fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="title"><a href="project-details.html">App Landing Web Template</a></h3>
+                            <span class="category">Template Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 portfolio-column">
+                    <div class="portfolio-block-four bg-four text-center">
+                        <div class="portfolio-img">
+                            <img src="{% static "/images/projects/project-16.jpg" %}" alt="portfolio image">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <a href="{% static "/images/projects/project-13.jpg" %}" class="img-popup"><i class="far fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="title"><a href="project-details.html">IT Agency Web Template</a></h3>
+                            <span class="category">Template Design</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-12">
+                    <div class="button mt-50 text-center">
+                        <a href="project-1.html" class="main-btn btn-orange-dark">Посмотреть больше проектов</a>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+    <!--====== End Projects Section ======-->
+    <!--====== Start Contact Information Section ======-->
+    <section class="contact-information-area contact-information-style-one pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="brand-logo text-center mb-100">
+                        <a href="#"> <img src={% static "/images/logo/contact-logo.png" %} alt="contact_logo"> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-8">
+                    <div class="information-wrapper mb-50">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="information-item mb-60">
+                                    <div class="icon">
+                                        <i class="flaticon-map"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Миллерово</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="information-item mb-60">
+                                    <div class="icon">
+                                        <i class="flaticon-email"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Email Address</h5>
+                                        <p><a href="mailto:hotlines@gmail.com">soknedis@yandex.ru</a></p>
+                                        <p><a href="www.infor.net">www.oknedis.site</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="information-cta mb-50">
+                        <div class="information-box mb-25">
+                            <h3>Рабочие часы</h3>
+                            <h5>Понедельник - Пятница  :  08.00 - 21.00 </h5>
+                        </div>
+                        <div class="information-box mb-25">
+                            <h3>Готовы с нами работать?</h3>
+                            <a href="#Связаться" class="main-btn main-btn-blue">Связаться с нами</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End Contact Information Section ======-->
+        <!--====== Start Contact Section ======-->
+        <section class="contact-area contact-style-two" id="Связаться">
+            <div class="contact-wrapper">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="section-title text-center mb-55">
+                                <h2>Пошлите нам сообщение</h2>
+                                <h5>Не колебаясь свяжитесь с нами))</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if message.tags == "error" %}
+                                <div class="alert alert-danger" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% else %}
+                                <div class="alert alert-{{ message.tags }}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact-form">
+                                <form method="post">
+                                    {% csrf_token %}
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form_group">
+                                                {{ form.name }}
+{#                                                <input type="text" class="form_control" placeholder="Полное имя" name="name" required>#}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form_group">
+                                                {{ form.phone }}
+{#                                                <input type="text" class="form_control" placeholder="Номер телефона" name="phone" required>#}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form_group">
+                                            {{ form.email }}
+
+{#                                                <input type="email" class="form_control" placeholder="Email" name="email" required>#}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="form_group">
+                                                {{ form.text }}
+{#                                                <textarea type="email" name="text" placeholder="Текст" class="form_control"></textarea>#}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5" style="margin-left: 30%">
+                                        <div class="form_group text-center">
+                                            <button type="submit" class="main-btn btn-purple w-100">послать сообщение</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--====== End Contact Section ======-->
+    </section>
+{% endblock content %}
