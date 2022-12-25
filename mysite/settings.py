@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os.path
 from pathlib import Path
+import passwords
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-s!6h%iwh#eypu0y2_!w2h#chk=to@dq6w7!o)1*vrn%czlgud6'
+SECRET_KEY = passwords.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -151,8 +152,8 @@ EMAIL_HOST = "smtp.yandex.ru"
 EMAIL_PORT = 465
 
 # Добавить User & Password
-EMAIL_HOST_USER = "soknedis@yandex.ru"
-EMAIL_HOST_PASSWORD = "nrsedbhrpywnhaqm"
+EMAIL_HOST_USER = passwords.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = passwords.EMAIL_HOST_PASSWORD
 
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
