@@ -24,3 +24,7 @@ def index(request):
         else:
             messages.error(request, "Ошибка отправки письма!")
     return render(request, "main_site/index.html", {"form": form})
+
+
+def page_not_found(request, exception):
+    return render(request, "404.html", status=404)

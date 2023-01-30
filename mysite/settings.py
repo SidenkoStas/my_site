@@ -26,8 +26,7 @@ SECRET_KEY = passwords.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", ]
 
 # Application definition
 
@@ -138,7 +137,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "main_site/static"),
 ]
 
-MEDIA_URL = "/media/"
+MEDIA_URL = "media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type

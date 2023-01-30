@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+        <section class="error-page-section pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="error-content text-center">
+                            <img src="{% static "/main_site/images/404.png" %}" class="mb-50" alt="">
+                            <h2>OPPS! This Page is Not Found</h2>
+                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quame
+                                molestiae consequatur veillum dolorem eum fugiate</p>
+                            <a href="{% url  'main_site:index' %}" class="main-btn btn-blue-light">go to home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock content %}
