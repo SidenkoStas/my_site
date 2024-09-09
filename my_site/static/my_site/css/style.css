@@ -1,0 +1,45 @@
+@import url('./normalization.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:900&display=swap');
+
+
+.header {
+    background-color: black;
+    height: 10vh;
+    max-width: 1820px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Flex', sans-serif; 
+    font-weight: 900;
+}
+
+.logo {
+    height: 12vh;
+    width: 12vh;
+    margin-left: 3%;
+    background-color: #C76526;
+    border-radius: 50%;
+    clip-path: inset(8.5% 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation {
+    background-color: green;
+    width: 40%;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+.btn_contact {
+    background-color: #C76526;
+}
