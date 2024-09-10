@@ -1,16 +1,22 @@
 @import url('./normalization.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:1000&display=swap');
 
+body {
+    background-color: #1e1e1e;
+    padding: 1px;
+}
 
 .header {
-    background-color: black;
     height: 10vh;
-    max-width: 1820px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto Flex', sans-serif; 
-    font-weight: 900;
+    font-weight: 1000;
+    font-size: 2vh;
+    border: 1px solid #848484;
+    color: #E9E3DC;
 }
 
 .logo {
@@ -19,27 +25,38 @@
     margin-left: 3%;
     background-color: #C76526;
     border-radius: 50%;
-    clip-path: inset(8.5% 0);
+    clip-path: inset(8.34% -40%);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    
+}
+
+.logo span {
+    font-size: 3vh;
+    line-height: 1;
+    position: relative;
+    left: 40%;
 }
 
 .navigation {
-    background-color: green;
+    display: flex;
     width: 40%;
+    justify-content: flex-end;
 }
 
 .navigation ul {
     list-style: none;
+    margin-right: 3%;
 }
 
 .navigation ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 1vw;
+    white-space: nowrap;
 }
 
 .btn_contact {
     background-color: #C76526;
+    padding: 2vh;
+    color: #1E1E1E;
 }
