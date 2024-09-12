@@ -4,10 +4,10 @@
 body {
     background-color: #1e1e1e;
     background-image: url("background.svg");
-    background-size: 67%;
+    background-size: 66%;
     background-repeat: no-repeat;
     background-position: top;
-    padding: 1px;
+    padding: 0 10px 10px;
 }
 
 .header {
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto Flex', sans-serif; 
+    font-family: 'Roboto Flex', sans-serif;
     font-weight: 1000;
     border: 1px solid rgba(132, 132, 132, 50%);
     background-color: rgba(30, 30, 30, 90%);
@@ -29,7 +29,7 @@ body {
     background-color: #C76526;
     color: #E9E3DC;
     border-radius: 50%;
-    clip-path: inset(15% -31%);
+    clip-path: inset(15% -40%);
 
 }
 
@@ -66,4 +66,43 @@ body {
 
 .navigation a:hover {
     color: #D1EF53;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 17%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 66%;
+}
+
+.name {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #E9E3DC;
+    line-height: 94%;
+    padding-top: 50px;
+}
+
+.foto {
+    width: 70%;
+    margin-top: -30px;
+    margin-bottom: -80px;
+}
+
+.about {
+    background-color: #D1EF53;
+    display: flex;
+    border-radius: 30px;
+    padding: 100px 100px 100px 50px;
 }

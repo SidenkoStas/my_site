@@ -1,57 +1,63 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <mete name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'my_site/css/style.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,1000&display=swap" rel="stylesheet">
-    
-    <!-- Title -->
-    <title>Web programmer Sidenko Stanislav</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'my_site/css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto+Flex:opsz,wght@8..144,1000&display=swap"
+            rel="stylesheet">
+
+        <!-- Title -->
+        <title>Web programmer Sidenko Stanislav</title>
 </head>
 
 <body>
-<!-- Header -->
-<header class="header">
-    <div class="logo">
-        <span>СИДЕНКО СТАС</span>
-    </div>
-    <nav class="navigation">
-        <a href="#">О СЕБЕ</a>
-        <a href="#">МОИ ПРОЕКТЫ</a>
-        <a href="#"class="btn_contact">СВЯЗАТЬСЯ</a>
-    </nav>
-</header>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span>СИДЕНКО СТАС</span>
+        </div>
+        <nav class="navigation">
+            <a href="#">О СЕБЕ</a>
+            <a href="#">МОИ ПРОЕКТЫ</a>
+            <a href="#" class="btn_contact">СВЯЗАТЬСЯ</a>
+        </nav>
+    </header>
 
-<!-- Left Side -->
-<aside class="left_side"></aside>
+    <!-- Main -->
+    <main class="main">
+        <!-- Left Side -->
+        <aside class="left_side"></aside>
 
-<!-- Main -->
-<main class="main">
-    <div class="info">
-        <article class="foto">
+        <section class="info">
+            <h1 class="name">СИДЕНКО СТАНИСЛАВ</h1>
+            <img src="{% static 'my_site/img/my_foto.webp' %}" alt="my_foto" class="foto">
+            <article class="about">
+                <h2 class="about__title">О СЕБЕ</h2>
+                <p class="about__text">I am Kirubakaran Saravanan, a creative professional, skilled at transforming ideas into aesthetically pleasing, creative functional designs and digital experiences. I am passionate about merging art and technology to exceed creative boundaries and achieve both visual excellence and user satisfaction.</p>
+            </article>
+        </section>
 
-        </article>
-        <article class="about">
-            
-        </article>
-    </div>
-</main>
-
-<!-- Right Side -->
-<aside class="right_side"></aside>
-
-
+        <!-- Right Side -->
+        <aside class="right_side"></aside>
+    </main>
 
 
-<!-- Footer -->
-<footer class="footer"></footer>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
 
 </body>
+
 </html>
