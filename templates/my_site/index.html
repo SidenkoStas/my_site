@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto+Flex:opsz,wght@8..144,1000&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,1000&family=VT323&display=swap"
             rel="stylesheet">
 
         <!-- Title -->
@@ -40,21 +40,28 @@
 
         <!-- Main -->
         <main class="main">
+
+            <!-- Info about me -->
             <section class="info">
                 <h1 class="name">СИДЕНКО СТАНИСЛАВ</h1>
                 <img src="{% static 'my_site/img/my_foto.webp' %}" alt="my_foto" class="foto">
                 <article class="about">
                     <h2 class="about__title">О СЕБЕ</h2>
                     <p class="about__text">
-                        Я <span class="about__text__highlight">Сиденко Станислав</span>,креативный профессионал, умеющий
-                        воплощать идеи в эстетически
-                        привлекательный, креативный <span class="about__text__highlight">функциональный дизайн</span> и
+                        Я <span class="about__text__highlight">Сиденко Станислав</span>, креативный профессионал,
+                        умеющий воплощать идеи в эстетически привлекательный, креативный
+                        <span class="about__text__highlight">функциональный дизайн</span> и
                         <span class="about__text__highlight">цифровые возможности</span>. Я увлечен объединением
-                        искусства и технологий, чтобы выйти за рамки творческих возможностей и достичь как <span
-                            class="about__text__highlight">визуального
-                            совершенства</span>, так и <span class="about__text__highlight">удовлетворенности
-                            пользователей</span>.</p>
+                        искусства и технологий, чтобы выйти за рамки творческих возможностей и достичь как
+                        <span class="about__text__highlight">визуального совершенства</span>, так и
+                        <span class="about__text__highlight">удовлетворенности пользователей</span>.
+                    </p>
                 </article>
+                <div class="skills">
+                    <img src="{% static 'my_site/img/icons/postgresql.svg' %}" alt="postgresql">
+                    <img src="{% static 'my_site/img/icons/django.svg' %}" alt="djaango">
+                    <img src="{% static 'my_site/img/icons/drf.svg' %}" alt="DRF" id="drf">
+                </div>
             </section>
         </main>
 

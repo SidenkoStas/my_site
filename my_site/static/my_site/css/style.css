@@ -1,5 +1,4 @@
 @import url('./normalization.css');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:1000&display=swap'); */
 
 body {
     background-color: #1e1e1e;
@@ -73,6 +72,7 @@ section.content {
 main {
     width: 66%;
 }
+
 aside {
     width: 17%;
 }
@@ -104,8 +104,8 @@ aside {
     background-color: #D1EF53;
     display: flex;
     border-radius: 20px;
-    width: 95%;
-    height: 265px;
+    width: 97%;
+    height: 285px;
     align-items: center;
 }
 
@@ -114,15 +114,39 @@ aside {
     font-weight: 1000;
     font-size: 70px;
     white-space: nowrap;
+    padding: 75px;
 }
 
 .about__text {
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    padding: 20px;;
+    font-size: 19px;
+    padding-right: 80px;
+    text-align: left;
+    line-height: 1.4;
 }
 
 .about__text__highlight {
     font-weight: 800;
+}
+
+.skills {
+    width: 98%;
+    height: 85px;
+    background: rgba(233, 227, 220, 0.05);
+    /* Glassmorphism */
+    backdrop-filter: blur(17.5px);
+    margin-top: 25px;
+    border: solid 3px rgba(132, 132, 132, 0.5);
+    border-radius: 20px;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.skills img {
+    width: 60px;
+}
+
+#drf {
+    filter: invert(8%) sepia(97%) saturate(5108%) hue-rotate(18deg) brightness(112%) contrast(127%);
 }
