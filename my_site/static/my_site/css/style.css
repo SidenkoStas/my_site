@@ -130,23 +130,56 @@ aside {
     font-weight: 800;
 }
 
-.skills {
+.hard_skills {
     width: 98%;
     height: 85px;
-    background: rgba(233, 227, 220, 0.05);
-    /* Glassmorphism */
+    background: rgba(233, 227, 220, 0.15);
     backdrop-filter: blur(17.5px);
     margin-top: 25px;
-    border: solid 3px rgba(132, 132, 132, 0.5);
+    border: solid 3px rgba(132, 132, 132, 0.3);
     border-radius: 20px;
     display: inline-flex;
     padding: 10px;
-}
-
-.skills img {
-    width: 60px;
+    justify-content: center;
+    gap: 40px;
 }
 
 #drf {
     filter: invert(8%) sepia(97%) saturate(5108%) hue-rotate(18deg) brightness(112%) contrast(127%);
+}
+
+#js {
+    width: 60px;
+}
+
+#sklearn {
+    width: 110px;
+}
+
+#pandas {
+    width: 150px;
+}
+
+#matplotlib {
+    width: 250px;
+}
+
+.soft_skills {
+    display: inline-flex;
+    width: 97%;
+    margin-top: 25px;
+}
+
+.soft_skills__icons {
+    background: rgba(233, 227, 220, 0.05);
+    backdrop-filter: blur(17.5px);
+    border: solid 3px rgba(132, 132, 132, 0.3);
+    border-radius: 20px;
+}
+
+.soft_skills__description {
+    background: rgba(233, 227, 220, 0.05);
+    backdrop-filter: blur(17.5px);
+    border: solid 3px rgba(132, 132, 132, 0.3);
+    border-radius: 20px;
 }
