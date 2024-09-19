@@ -6,6 +6,8 @@ body {
     background-size: 66%;
     background-repeat: no-repeat;
     background-position: top;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     padding: 0 10px 10px;
 }
 
@@ -104,7 +106,7 @@ aside {
     background-color: #D1EF53;
     display: flex;
     border-radius: 20px;
-    width: 97%;
+    width: 98%;
     height: 285px;
     align-items: center;
 }
@@ -118,8 +120,6 @@ aside {
 }
 
 .about__text {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
     font-size: 19px;
     padding-right: 80px;
     text-align: left;
@@ -166,8 +166,9 @@ aside {
 
 .soft_skills {
     display: inline-flex;
-    width: 97%;
+    width: 98%;
     margin-top: 25px;
+    gap: 25px;
 }
 
 .soft_skills__icons {
@@ -175,6 +176,15 @@ aside {
     backdrop-filter: blur(17.5px);
     border: solid 3px rgba(132, 132, 132, 0.3);
     border-radius: 20px;
+    min-width: 23%;
+}
+
+.soft_skills__title {
+    background-color: #D1EF53;
+    border: solid 3px rgba(132, 132, 132, 0.3);
+    border-radius: 20px;
+    transform: translate(-1px, -1px);
+    width: calc(100% + 2px);
 }
 
 .soft_skills__description {
@@ -182,4 +192,15 @@ aside {
     backdrop-filter: blur(17.5px);
     border: solid 3px rgba(132, 132, 132, 0.3);
     border-radius: 20px;
+    min-width: 74.5%;
+}
+
+dl {
+    display: inline-flex;
+    align-items: center;
+    margin: 2%;
+}
+
+dd {
+    margin: 0;
 }
